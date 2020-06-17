@@ -77,7 +77,7 @@ INSERT INTO KichCo VALUES (1, 'S'),
 						  (3, 'L'),
 						  (4, 'FreeSize')
 
-INSERT INTO NhaSanXuat VALUES (1, N'Bò Sữa', N'Thanh Xuân, Hà Nội', 0354053097),
+INSERT INTO ThuongHieu VALUES (1, N'Bò Sữa', N'Thanh Xuân, Hà Nội', 0354053097),
                               (2, N'Adidas', N'362 Đỗ Xuân Hợp, Phước Long A, Q9', 0906393561),
 							  (3, N'Nike', N'362 Đỗ Xuân Hợp, Phước Long A, Q9, tp Hồ Chí Minh', 0368185590)
 
@@ -86,46 +86,46 @@ INSERT INTO ChatLieu VALUES (1, 'Coton'),
 							(3, 'Jeans'),
 							(4, 'Lanh')
 
-INSERT INTO SANPHAM VALUES  ('SP001', 005, 1, 1, 1,  N'ÁO PHÔNG BÉ GÁI HỌA TIẾT', 150000, 150000, 10,1, N'https://canifa.s3.amazonaws.com/media/catalog/product/1/t/1ts19s005-fo025-120_2.jpg', N'https://canifa.s3.amazonaws.com/media/catalog/product/1/t/1ts19s005-fo025-120_2.jpg',
-                            N'Áo phông cotton USA họa tiết.Dáng regular, cổ tròn, ngắn tay.Phù hợp mặc mùa hè, thoải mái, dễ dàng. Kết hợp quần shorts, giày thể thao, sandal.', '01/15/2020', 100, 1),
+INSERT INTO SANPHAM VALUES  ('SP001', 005, 1, 1, 1,  N'ÁO PHÔNG BÉ GÁI HỌA TIẾT', 150000, 150000, 10, N'https://canifa.s3.amazonaws.com/media/catalog/product/1/t/1ts19s005-fo025-120_2.jpg', N'https://canifa.s3.amazonaws.com/media/catalog/product/1/t/1ts19s005-fo025-120_2.jpg',
+                            N'Áo phông cotton USA họa tiết.Dáng regular, cổ tròn, ngắn tay.Phù hợp mặc mùa hè, thoải mái, dễ dàng. Kết hợp quần shorts, giày thể thao, sandal.', '01/15/2020', 1),
 							
-                            ('SP002', 005, 1,1,1, N'ÁO PHÔNG BÉ GÁI', 169000, 169000,10, 3, N'https://canifa.s3.amazonaws.com/media/catalog/product/1/t/1ts20s006-sb287-1-thumb.jpg', N'https://canifa.s3.amazonaws.com/media/catalog/product/1/t/1ts20s006-sb287-1-thumb.jpg',
-                            N'Áo phông in hình chất liệu cottonPhom regular, cổ tròn, tay cộc.', '01/15/2020', 100, 3),
-							('SP003', 005, 1, 1, 1, N'ÁO PHÔNG BÉ GÁI', 169000, 169000,10, 3, N'https://canifa.s3.amazonaws.com/media/catalog/product/1/t/1ts20s027-sg0921-_01.jpg',  N'https://canifa.s3.amazonaws.com/media/catalog/product/1/t/1ts20s027-sg0921-_01.jpg', 
+                            ('SP002', 005, 1,1,1, N'ÁO PHÔNG BÉ GÁI', 169000, 169000,10, N'https://canifa.s3.amazonaws.com/media/catalog/product/1/t/1ts20s006-sb287-1-thumb.jpg', N'https://canifa.s3.amazonaws.com/media/catalog/product/1/t/1ts20s006-sb287-1-thumb.jpg',
+                            N'Áo phông in hình chất liệu cottonPhom regular, cổ tròn, tay cộc.', '01/15/2020', 3),
+							('SP003', 005, 1, 1, 1, N'ÁO PHÔNG BÉ GÁI', 169000, 169000,10, N'https://canifa.s3.amazonaws.com/media/catalog/product/1/t/1ts20s027-sg0921-_01.jpg',  N'https://canifa.s3.amazonaws.com/media/catalog/product/1/t/1ts20s027-sg0921-_01.jpg', 
 							N'Áo phông chất liệu cotton in hình thân trước.
-                            Phom regular, cổ tròn, tay cộc.Phù hợp mùa xuân hè. Phong cách đơn giản, dễ dàng kết hợp với quần soóc, jeans, khaki,…','01/15/2020', 100, 3),
+                            Phom regular, cổ tròn, tay cộc.Phù hợp mùa xuân hè. Phong cách đơn giản, dễ dàng kết hợp với quần soóc, jeans, khaki,…','01/15/2020', 3),
 
-							('SP004', 004,1, 2, 2, N'QUẦN VÁY BÉ GÁI', 350000, 350000, 10, 1, N'https://canifa.s3.amazonaws.com/media/catalog/product/1/k/1ks19s012-sa403-120_2.jpg',  N'https://canifa.s3.amazonaws.com/media/catalog/product/1/k/1ks19s012-sa403-120_2.jpg',
+							('SP004', 004,1, 2, 2, N'QUẦN VÁY BÉ GÁI', 350000, 350000, 10, N'https://canifa.s3.amazonaws.com/media/catalog/product/1/k/1ks19s012-sa403-120_2.jpg',  N'https://canifa.s3.amazonaws.com/media/catalog/product/1/k/1ks19s012-sa403-120_2.jpg',
 							N'Chân váy cotton 
                             Phom chữ A, cạp rời (thân trước êm, thân sau luồn chun) thắt nơ trang trí, túi ốp thân trước.
-                            Phù hợp mặc mùa xuân hè, thoải mái, dễ dàng. Kết hợp áo phông, áo blouse, sandal.', '01/15/2020', 200, 1),
-							('SP005', 004,1, 2, 3, N'QUẦN VÁY BÉ GÁI', 350000, 350000,10, 1,N'https://canifa.s3.amazonaws.com/media/catalog/product/1/k/1ks20s006-sb205-110.jpg',N'https://canifa.s3.amazonaws.com/media/catalog/product/1/k/1ks20s006-sb205-110.jpg',
-							N'Chân váy chất liệu polyester. Phom regular, dáng xoè, có lót.', '01/15/2020', 150, 1),
+                            Phù hợp mặc mùa xuân hè, thoải mái, dễ dàng. Kết hợp áo phông, áo blouse, sandal.', '01/15/2020', 1),
+							('SP005', 004,1, 2, 3, N'QUẦN VÁY BÉ GÁI', 350000, 350000,10, N'https://canifa.s3.amazonaws.com/media/catalog/product/1/k/1ks20s006-sb205-110.jpg',N'https://canifa.s3.amazonaws.com/media/catalog/product/1/k/1ks20s006-sb205-110.jpg',
+							N'Chân váy chất liệu polyester. Phom regular, dáng xoè, có lót.', '01/15/2020', 1),
 
-							('SP006', 006, 1,1,1, N'VÁY LIỀN BÉ GÁI', 290000,290000,10, 1, N'https://canifa.s3.amazonaws.com/media/catalog/product/1/d/1ds20s025-pr091-2-thumb.jpg',  N'https://canifa.s3.amazonaws.com/media/catalog/product/1/d/1ds20s025-pr091-2-thumb.jpg',
-							N'Váy liền bé gái', '01/15/2020', 200,1),
+							('SP006', 006, 1,1,1, N'VÁY LIỀN BÉ GÁI', 290000,290000,10, N'https://canifa.s3.amazonaws.com/media/catalog/product/1/d/1ds20s025-pr091-2-thumb.jpg',  N'https://canifa.s3.amazonaws.com/media/catalog/product/1/d/1ds20s025-pr091-2-thumb.jpg',
+							N'Váy liền bé gái', '01/15/2020', 1),
 
-							('SP007', 001,2,3,3, N'QUẦN BÉ TRAI', 200000,200000,10, 1, N'https://canifa.s3.amazonaws.com/media/catalog/product/2/b/2bk20s002-se219-2.jpg',N'https://canifa.s3.amazonaws.com/media/catalog/product/2/b/2bk20s002-se219-2.jpg',
-							N'Quần khaki trơn, chất liệu khaki vân chéo cotton spandex co giãn. Phom regular, dáng dài. Cạp chun, dây luồn cạp. Túi dọc thân. Đơn giản, thoải mái, phù hợp nhiều hoàn cảnh. Thích hợp mặc quanh năm. Kết hợp với áo phông, sơ mi…với sandal, giày thể thao...','01/15/2020', 200,1),
-							('SP008', 001,2,3,3, N'QUẦN JEANS BÉ TRAI', 300000, 300000,10, 1, N'https://canifa.s3.amazonaws.com/media/catalog/product/2/b/2bj20s001-sj556-120.jpg', N'https://canifa.s3.amazonaws.com/media/catalog/product/2/b/2bj20s001-sj556-120.jpg',
-							N'Quần jeans trơn, chất liệu denim cotton pha. Phom regular, dáng dài. Túi chéo. Cạp chun, dây luồn cạp.', '01/15/2020', 150, 1),
-							('SP009', 002,3,1,1, N'ÁO BÉ TRAI', 150000, 150000,10, 1, N'https://canifa.s3.amazonaws.com/media/catalog/product/2/t/2th20s002-cg068-120.jpg', N'https://canifa.s3.amazonaws.com/media/catalog/product/2/t/2th20s002-cg068-120.jpg',
-							N'Áo sơ mi cotton họa tiết kẻ caro. Phom regular, cổ đức cài khuy, tay cộc.', '01/15/2020', 150, 1),
-							('SP010', 003,2,4,1, N'BỘ MẶC NHÀ BÉ TRAI', 299000,299000,10, 1, N'https://canifa.s3.amazonaws.com/media/catalog/product/2/l/2ls20s014-sg052-1-thumb.jpg', N'https://canifa.s3.amazonaws.com/media/catalog/product/2/l/2ls20s014-sg052-1-thumb.jpg',
-							N'Bộ mặc nhà cotton họa tiết. Phom regular, áo cộc tay, quần cộc.', '01/15/2020', 150, 1),
+							('SP007', 001,2,3,3, N'QUẦN BÉ TRAI', 200000,200000,10, N'https://canifa.s3.amazonaws.com/media/catalog/product/2/b/2bk20s002-se219-2.jpg',N'https://canifa.s3.amazonaws.com/media/catalog/product/2/b/2bk20s002-se219-2.jpg',
+							N'Quần khaki trơn, chất liệu khaki vân chéo cotton spandex co giãn. Phom regular, dáng dài. Cạp chun, dây luồn cạp. Túi dọc thân. Đơn giản, thoải mái, phù hợp nhiều hoàn cảnh. Thích hợp mặc quanh năm. Kết hợp với áo phông, sơ mi…với sandal, giày thể thao...','01/15/2020',1),
+							('SP008', 001,2,3,3, N'QUẦN JEANS BÉ TRAI', 300000, 300000,10, N'https://canifa.s3.amazonaws.com/media/catalog/product/2/b/2bj20s001-sj556-120.jpg', N'https://canifa.s3.amazonaws.com/media/catalog/product/2/b/2bj20s001-sj556-120.jpg',
+							N'Quần jeans trơn, chất liệu denim cotton pha. Phom regular, dáng dài. Túi chéo. Cạp chun, dây luồn cạp.', '01/15/2020', 1),
+							('SP009', 002,3,1,1, N'ÁO BÉ TRAI', 150000, 150000,10, N'https://canifa.s3.amazonaws.com/media/catalog/product/2/t/2th20s002-cg068-120.jpg', N'https://canifa.s3.amazonaws.com/media/catalog/product/2/t/2th20s002-cg068-120.jpg',
+							N'Áo sơ mi cotton họa tiết kẻ caro. Phom regular, cổ đức cài khuy, tay cộc.', '01/15/2020', 1),
+							('SP010', 003,2,4,1, N'BỘ MẶC NHÀ BÉ TRAI', 299000,299000,10, N'https://canifa.s3.amazonaws.com/media/catalog/product/2/l/2ls20s014-sg052-1-thumb.jpg', N'https://canifa.s3.amazonaws.com/media/catalog/product/2/l/2ls20s014-sg052-1-thumb.jpg',
+							N'Bộ mặc nhà cotton họa tiết. Phom regular, áo cộc tay, quần cộc.', '01/15/2020', 1),
 
-							('SP011', 009,2,1,1, N'COMBO BỘ LIỀN', 200000,200000,10, 1, N'https://canifa.s3.amazonaws.com/media/catalog/product/7/l/7lj18a006-pm026-9-12-ghep_final_2.jpg',N'https://canifa.s3.amazonaws.com/media/catalog/product/7/l/7lj18a006-pm026-9-12-ghep_final_2.jpg',
-							N'Combo bộ liền cho bé', '01/15/2020', 100, 1),
-							('SP012', 008,2,1,2, N'COMBO ÁO BÉ', 150000,150000,10, 2, N'https://canifa.s3.amazonaws.com/media/catalog/product/7/s/7st18a002-fw103-69-ghep_final.jpg',N'https://canifa.s3.amazonaws.com/media/catalog/product/7/s/7st18a002-fw103-69-ghep_final.jpg',
+							('SP011', 009,2,1,1, N'COMBO BỘ LIỀN', 200000,200000,10, N'https://canifa.s3.amazonaws.com/media/catalog/product/7/l/7lj18a006-pm026-9-12-ghep_final_2.jpg',N'https://canifa.s3.amazonaws.com/media/catalog/product/7/l/7lj18a006-pm026-9-12-ghep_final_2.jpg',
+							N'Combo bộ liền cho bé', '01/15/2020', 1),
+							('SP012', 008,2,1,2, N'COMBO ÁO BÉ', 150000,150000,10, N'https://canifa.s3.amazonaws.com/media/catalog/product/7/s/7st18a002-fw103-69-ghep_final.jpg',N'https://canifa.s3.amazonaws.com/media/catalog/product/7/s/7st18a002-fw103-69-ghep_final.jpg',
 							N'Set áo mặc nhà bé cổ tròn có 2 khuy bấm ở vai để mẹ dễ dàng thay, mặc áo cho bé
                             Chất liệu mềm mại, thấm hút mồ hôi tốt giúp bé luôn có được cảm giác thoải mái, dễ chịu
-                            Sản phẩm sử dụng chất liệu Cotton US đạt chứng chỉ - OEKOTEX Class 1 an toàn tuyệt đối cho sức khỏe của em bé Sản phẩm dành cho cả em bé trai và em bé gái', '01/15/2020', 200, 2),
-							('SP013', 007, 2,1,3,N'QUẦN BÉ SƠ SINH', 200000, 200000, 10, 2, N'https://canifa.s3.amazonaws.com/media/catalog/product/7/l/7lb18s003-sb440-69.jpg',  N'https://canifa.s3.amazonaws.com/media/catalog/product/7/l/7lb18s003-sb440-69.jpg',
+                            Sản phẩm sử dụng chất liệu Cotton US đạt chứng chỉ - OEKOTEX Class 1 an toàn tuyệt đối cho sức khỏe của em bé Sản phẩm dành cho cả em bé trai và em bé gái', '01/15/2020', 2),
+							('SP013', 007, 2,1,3,N'QUẦN BÉ SƠ SINH', 200000, 200000, 10, N'https://canifa.s3.amazonaws.com/media/catalog/product/7/l/7lb18s003-sb440-69.jpg',  N'https://canifa.s3.amazonaws.com/media/catalog/product/7/l/7lb18s003-sb440-69.jpg',
 							N'Quần đùi đũng rộng bé trai
                             Quần dáng thụng với đũng quần sâu, rộng rãi tạo sự thoải mái trong từng vận động
                             Thiết kế cạp bo chun co giãn ôm vừa vặn, không gây in hằn sâu làm tổn thương da bé, không bị tuột khi bé cử động.
                             Chất liệu 100 % Cotton US mang lại cảm giác mềm mại, thấm hút mồ hôi tốt giúp bé luôn có được cảm giác thoải mái, dễ chịu.
-                            Sản phẩm đạt chứng chỉ - OEKOTEX Class 1 an toàn cho làn da nhạy cảm của bé', '01/15/2020', 200, 2)
+                            Sản phẩm đạt chứng chỉ - OEKOTEX Class 1 an toàn cho làn da nhạy cảm của bé', '01/15/2020', 2)
 
 INSERT INTO CHITIETDONHANG VALUES ('CT0001', 'DH00001', 'SP001', 1, 150000, NULL),
                                   ('CT0002', 'DH00002', 'SP002', 1, 169000, NULL),

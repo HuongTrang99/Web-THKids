@@ -68,12 +68,12 @@ CREATE TABLE ChatLieu
 	TenChatLieu nvarchar (100) not null unique
 )
 
-CREATE TABLE NhaSanXuat
+CREATE TABLE ThuongHieu
 (
-	MaNhaSanXuat char(10) not null primary key,
-	TenNhaSanXuat nvarchar (100) not null unique,
-	DiaChiNSX nvarchar (200) null,
-	SoDienThoaiNSX int null
+	MaThuongHieu char(10) not null primary key,
+	TenThuongHieu nvarchar (100) not null unique,
+	DiaChi nvarchar (200) null,
+	SoDienThoai int null
 )
 
 
@@ -82,18 +82,16 @@ CREATE TABLE SanPham(
 	   MaDMSP char(15) references DanhMucSanPham(MaDMSP) not null,
 	   MaKichCo char(10) references KichCo (MaKichCo) null,
 	   MaChatLieu char(10) references ChatLieu(MaChatLieu) null,
-	   MaNhaSanXuat char(10) references NhaSanXuat(MaNhaSanXuat) null,
+	   MaThuongHieu char(10) references ThuongHieu(MaThuongHieu) null,
 	   TenSanPham nvarchar(50) not null,
 	   GiaSanPham money not null,
 	   GiaChietKhau money null,
 	   SoLuong int null,
-	   SoLuongBan int null,
 	   LinkAnh varchar(max) not null,
 	   LinkListAnh text not null,
 	   ThongTinSP nvarchar(max) null,
 	   NgayCapNhat smalldatetime null,
-	   LuotXem int null,
-	   LuotMua int null
+	   SoLuongMua int null
 	   )
 
 CREATE TABLE TrangThaiDonHang(
