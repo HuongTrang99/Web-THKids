@@ -88,24 +88,29 @@ CREATE TABLE SanPham(
 	   GiaChietKhau money null,
 	   SoLuong int null,
 	   SoLuongBan int null,
-	   LinkAnh varchar(50) not null,
+	   LinkAnh varchar(max) not null,
 	   LinkListAnh text not null,
-	   ThongTinSP ntext null,
+	   ThongTinSP nvarchar(max) null,
 	   NgayCapNhat smalldatetime null,
 	   LuotXem int null,
 	   LuotMua int null
+	   )
+
+CREATE TABLE TrangThaiDonHang(
+       MaTrangThai char(15) not null primary key,
+	   TenTrangThai nvarchar(50)
 	   )
 
 CREATE TABLE DonHang(
        MaDonHang char(15) not null primary key,
 	   MaNhanVien char(15) references NhanVien(MaNhanVien) not null,
 	   MaKhachHang char(15) references KhachHang(MaKhachHang) not null,
-	   TrangThaiDon nvarchar(50) not null,
+	   MaTrangThai char(15) references TrangThaiDonHang(MaTrangThai) not null,
 	   TongTien money not null,
 	   ThoiGianTaoDonHang date null,
 	   ThoiGianThanhToan date not null,
 	   ThoiGianGiaoHang date null,
-	   GhiChu nvarchar(50) null
+	   GhiChu nvarchar(max) null
 	   )
 
 CREATE TABLE ChiTietDonHang(
