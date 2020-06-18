@@ -1,0 +1,28 @@
+namespace TTN_THKids.Models
+{
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+    using System.Data.Entity.Spatial;
+
+    [Table("TrangThaiDonHang")]
+    public partial class TrangThaiDonHang
+    {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public TrangThaiDonHang()
+        {
+            DonHangs = new HashSet<DonHang>();
+        }
+
+        [Key]
+        [StringLength(15)]
+        public string MaTrangThai { get; set; }
+
+        [StringLength(50)]
+        public string TenTrangThai { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<DonHang> DonHangs { get; set; }
+    }
+}

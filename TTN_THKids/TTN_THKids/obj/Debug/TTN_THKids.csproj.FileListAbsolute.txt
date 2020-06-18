@@ -51,9 +51,10 @@ C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\roslyn\vbc.rsp
 C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\roslyn\VBCSCompiler.exe
 C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\Antlr3.Runtime.dll
+C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\EntityFramework.dll
+C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\EntityFramework.SqlServer.dll
 C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\Model.dll
 C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\Newtonsoft.Json.dll
 C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\System.Web.Helpers.dll
 C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\System.Web.Mvc.dll
@@ -63,9 +64,8 @@ C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\System.Web.WebPages.D
 C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\System.Web.WebPages.dll
 C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\System.Web.WebPages.Razor.dll
 C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\WebGrease.dll
-C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\EntityFramework.dll
-C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\Model.pdb
-C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\Model.dll.config
+C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\EntityFramework.xml
+C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\EntityFramework.SqlServer.xml
 C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\System.Web.Helpers.xml
 C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\System.Web.Mvc.xml
 C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\System.Web.Optimization.xml
@@ -76,11 +76,8 @@ C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\System.Web.WebPages.R
 C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\Newtonsoft.Json.xml
 C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\Antlr3.Runtime.pdb
 C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\EntityFramework.xml
 C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\obj\Debug\TTN_THKids.csprojAssemblyReference.cache
 C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\obj\Debug\TTN_THKids.csproj.CoreCompileInputs.cache
 C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\obj\Debug\TTN_THKids.csproj.CopyComplete
 C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\obj\Debug\TTN_THKids.dll
 C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\obj\Debug\TTN_THKids.pdb
-C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\EntityFramework.SqlServer.dll
-C:\Users\DELL\Desktop\Web-THKids\TTN_THKids\TTN_THKids\bin\EntityFramework.SqlServer.xml
