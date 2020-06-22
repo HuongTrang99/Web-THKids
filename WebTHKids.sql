@@ -20,7 +20,7 @@ go
 USE WebTHKids
 GO
 CREATE TABLE QuanTriVien(
-		ID bigint(15) not null primary key,
+		ID bigint not null primary key,
 		username nvarchar (50) not null unique,
 		pass nvarchar (30) not null
 		)
@@ -119,5 +119,3 @@ CREATE TABLE ChiTietDonHang(
 	   GiaSanPham money not null,
 	   GhiChu nvarchar(MAX) null
 	   )
-
-
