@@ -148,4 +148,3 @@ INSERT INTO CHITIETDONHANG VALUES ('CT0001', 'DH00001', 'SP001', 1, 150000, NULL
 								  ('CT0019', 'DH00018', 'SP011', 1, 200000, NULL),
 								  ('CT0020', 'DH00019', 'SP011', 1, 200000, NULL),
 								  ('CT0021', 'DH00020', 'SP011', 1, 200000, NULL)
-								  select * from ThuongHieu
