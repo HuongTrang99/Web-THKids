@@ -1,40 +1,190 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.ico" type="image/ico" />
+
+    <title>THKids - Thế giới thời trang cho bé! | </title>
+
+    <!-- Bootstrap -->
+    <link href="~/Areas/Admin/Content/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="~/Areas/Admin/Content/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="~/Areas/Admin/Content/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="~/Areas/Admin/Content/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+
+    <!-- bootstrap-progressbar -->
+    <link href="~/Areas/Admin/Content/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="~/Areas/Admin/Content/vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
+    <!-- bootstrap-daterangepicker -->
+    <link href="~/Areas/Admin/Content/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="~/Areas/Admin/Content/build/css/custom.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="/Admin/Home/Index" class="site_title"><i class="fa fa-paw"></i> <span>THKids</span></a>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <!-- menu profile quick info -->
+                    <div class="profile clearfix">
+                        <div class="profile_pic">
+                            
+                        </div>
+                        <div class="profile_info">
+                            <span>Xin chào,</span>
+                            <h2>@Session["username"]</h2>
+                        </div>
+                    </div>
+                    <!-- /menu profile quick info -->
+
+                    <br />
+
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <h3>Danh mục quản lý</h3>
+                            <ul class="nav side-menu">
+
+                                <li><a href="/Admin/QuanTriVien/Index"><i class="fa fa-user"></i>Quản trị viên</a></li>
+                                <li><a href="/Admin/NhanVien/Index"><i class="fa fa-user"></i>Nhân viên</a></li>
+                                <li><a href="/Admin/SanPham/Index"><i class="fa fa-edit"></i>Sản phẩm</a></li>
+                                <li><a href="/Admin/ThuongHieu/Index"><i class="fa fa-book"></i>Thương hiệu</a></li>
+                                <li><a href="/Admin/ChatLieu/Index"><i class="fa fa-book"></i>Chất liệu</a></li>
+                                <li><a href="/Admin/KichCo/Index"><i class="fa fa-calculator"></i>Kích cỡ</a></li>
+                                <li><a href="/Admin/DanhMuc/Index"><i class="fa fa-clone"></i>Danh mục</a></li>
+                                <li><a href="/Admin/DanhMucSanPham/Index"><i class="fa fa-bar-chart"></i>Danh mục sản phẩm</a></li>
+                                <li><a href="/Admin/DonHang/Index"><i class="fa fa-clone"></i>Đơn hàng</a></li>
+                                <li><a href="/Admin/ChiTietDonHang/Index"><i class="fa fa-edit"></i>Chi tiết đơn hàng</a></li>
+                                <li><a href="/Admin/KhachHang/Index"><i class="fa fa-clone"></i>Khách hàng</a></li>
+                                <li><a href="/Admin/TrangThaiDonHang/Index"><i class="fa fa-edit"></i>Trạng thái đơn hàng</a></li>
+
+                            </ul>
+                
+                        </div>
+                        
+
+                    </div>
+                    <!-- /sidebar menu -->
+                    <!-- /menu footer buttons -->
+                    <div class="sidebar-footer hidden-small">
+                        <a data-toggle="tooltip" data-placement="top" title="Settings">
+                            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                            <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Lock">
+                            <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <!-- /menu footer buttons -->
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                </ul>
+
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu">
+                    <nav>
+                        <div class="nav toggle">
+                            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                        </div>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    @Session["username"]
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li><a href=""><i class="glyphicon glyphicon-user"></i>  Lý lịch</a></li>
+                                    <li><a href=""><i class="glyphicon glyphicon-home"></i>  Trang chủ</a></li>
+                                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Đăng xuất</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
             </div>
+            <!-- /top navigation -->
+            <!-- page content -->
+            
+            <div class="right_col" role="main">
+                <!-- top tiles -->
+                @RenderBody();
+            </div>
+
+            <!-- /page content -->
+            <!-- footer content -->
+            <footer>
+                <div class="pull-right">
+                   
+                </div>
+                <div class="clearfix"></div>
+            </footer>
+            <!-- /footer content -->
         </div>
     </div>
 
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+    <!-- jQuery -->
+    <script src="~/Areas/Admin/Content/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="~/Areas/Admin/Content/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="~/Areas/Admin/Content/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="~/Areas/Admin/Content/vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="~/Areas/Admin/Content/vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="~/Areas/Admin/Content/vendors/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="~/Areas/Admin/Content/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="~/Areas/Admin/Content/vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="~/Areas/Admin/Content/vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="~/Areas/Admin/Content/vendors/Flot/jquery.flot.js"></script>
+    <script src="~/Areas/Admin/Content/vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="~/Areas/Admin/Content/vendors/Flot/jquery.flot.time.js"></script>
+    <script src="~/Areas/Admin/Content/vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="~/Areas/Admin/Content/vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="~/Areas/Admin/Content/vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="~/Areas/Admin/Content/vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="~/Areas/Admin/Content/vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="~/Areas/Admin/Content/vendors/DateJS/build/date.js"></script>
+    <!-- JQVMap -->
+    <script src="~/Areas/Admin/Content/vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="~/Areas/Admin/Content/vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="~/Areas/Admin/Content/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="~/Areas/Admin/Content/vendors/moment/min/moment.min.js"></script>
+    <script src="~/Areas/Admin/Content/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    <!-- Custom Theme Scripts -->
+    <script src="~/Areas/Admin/Content/build/js/custom.min.js"></script>
+
 </body>
 </html>

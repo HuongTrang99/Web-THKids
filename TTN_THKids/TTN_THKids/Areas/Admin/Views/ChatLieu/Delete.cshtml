@@ -1,0 +1,32 @@
+﻿@model TTN_THKids.Models.ChatLieu
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Xóa</h2>
+
+<h3>Chắc chắn xóa?</h3>
+<div>
+    <h4>Chất liệu</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Tên chất liệu
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenChatLieu)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,33 @@
+﻿@model IEnumerable<TTN_THKids.Models.KichCo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Danh sách kích cỡ</h2>
+
+<p>
+    @Html.ActionLink("Tạo mới", "Create")
+</p>
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>
+            Tên kích cỡ
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenKichCo)
+        </td>
+        <td>
+            @Html.ActionLink("Chỉnh sửa", "Edit", new { id=item.MaKichCo }) |
+            @Html.ActionLink("Chi tiết", "Details", new { id=item.MaKichCo }) |
+            @Html.ActionLink("Xóa", "Delete", new { id=item.MaKichCo })
+        </td>
+    </tr>
+}
+
+</table>

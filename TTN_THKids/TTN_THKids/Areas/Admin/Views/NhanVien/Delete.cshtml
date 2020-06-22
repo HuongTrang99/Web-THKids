@@ -1,0 +1,61 @@
+﻿@model TTN_THKids.Models.NhanVien
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Xóa</h2>
+
+<h3>Chắc chắn xóa?</h3>
+<div>
+    <h4>Thông tin nhân viên</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @*@Html.DisplayNameFor(model => model.HoTen)*@
+            Họ tên nhân viên
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoTen)
+        </dd>
+
+        <dt>
+
+            @*@Html.DisplayNameFor(model => model.TenDangNhap)*@
+            Tên đăng nhập
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenDangNhap)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.MatKhau)*@
+            Mật khẩu
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MatKhau)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.NgayVaoLam)*@
+            Ngày vào làm
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayVaoLam)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-default" /> |
+            @Html.ActionLink("Quay lại", "Index")
+        </div>
+    }
+</div>

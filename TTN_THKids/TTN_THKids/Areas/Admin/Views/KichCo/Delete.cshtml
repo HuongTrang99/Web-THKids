@@ -1,0 +1,33 @@
+﻿@model TTN_THKids.Models.KichCo
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Xóa</h2>
+
+<h3>Chắc chắn xóa?</h3>
+<div>
+    <h4>Kích cỡ</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @*@Html.DisplayNameFor(model => model.TenKichCo)*@
+            Tên kích cỡ
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenKichCo)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-default" /> |
+            @Html.ActionLink("Quay lại", "Index")
+        </div>
+    }
+</div>

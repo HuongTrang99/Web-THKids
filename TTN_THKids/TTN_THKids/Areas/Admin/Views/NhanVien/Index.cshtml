@@ -1,0 +1,55 @@
+﻿@model IEnumerable<TTN_THKids.Models.NhanVien>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Danh sách nhân viên</h2>
+
+<p>
+    @Html.ActionLink("Tạo mới", "Create")
+</p>
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>
+            @*@Html.DisplayNameFor(model => model.HoTen)*@
+            Họ tên nhân viên
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.TenDangNhap)*@
+            Tên đăng nhập
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.MatKhau)*@
+            Mật khẩu
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.NgayVaoLam)*@
+            Ngày vào làm
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.HoTen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenDangNhap)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MatKhau)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NgayVaoLam)
+        </td>
+        <td>
+            @Html.ActionLink("Chỉnh sửa", "Edit", new { id=item.MaNhanVien }) |
+            @Html.ActionLink("Chi tiết", "Details", new { id=item.MaNhanVien }) |
+            @Html.ActionLink("Xóa", "Delete", new { id=item.MaNhanVien })
+        </td>
+    </tr>
+}
+
+</table>

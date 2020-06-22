@@ -1,0 +1,89 @@
+﻿@model TTN_THKids.Models.DonHang
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Chi tiết</h2>
+
+<div>
+    <h4>DonHang</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @*@Html.DisplayNameFor(model => model.KhachHang.HoTen)*@
+            Họ tên khách hàng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KhachHang.HoTen)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.NhanVien.HoTen)*@
+            Họ tên nhân viên
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NhanVien.HoTen)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.TrangThaiDonHang.TenTrangThai)*@
+            Trạng thái đơn
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrangThaiDonHang.TenTrangThai)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.TongTien)*@
+            Tổng tiền
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TongTien)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.ThoiGianTaoDonHang)*@
+            Thời gian tạo đơn
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ThoiGianTaoDonHang)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.ThoiGianThanhToan)*@
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ThoiGianThanhToan)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.ThoiGianGiaoHang)*@
+            Thồi gian giao hàng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ThoiGianGiaoHang)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.GhiChu)*@
+            Ghi chú
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GhiChu)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.MaDonHang }) |
+    @Html.ActionLink("Quay lại", "Index")
+</p>
