@@ -23,9 +23,13 @@
             @Html.DisplayFor(modelItem => item.TenDanhMuc)
         </td>
         <td>
-            @Html.ActionLink("Chỉnh sửa", "Edit", new { id=item.MaDanhMuc }) |
-            @Html.ActionLink("Chi tiết", "Details", new { id=item.MaDanhMuc }) |
-            @Html.ActionLink("Xóa", "Delete", new { id=item.MaDanhMuc })
+            <a href="~/Admin/DanhMuc/Edit/@item.MaDanhMuc"> Chỉnh sửa |</a>
+            <a href="~/Admin/DanhMuc/Details/@item.MaDanhMuc"> Chi tiết |</a>
+            <a href="~/Admin/DanhMuc/Delete/@item.MaDanhMuc"> Xóa</a>
+
+            @*@Html.ActionLink("Chỉnh sửa", "Edit", new { id=item.MaDanhMuc }) |
+        @Html.ActionLink("Chi tiết", "Details", new { id=item.MaDanhMuc }) |
+        @Html.ActionLink("Xóa", "Delete", new { id=item.MaDanhMuc })*@
         </td>
     </tr>
 }

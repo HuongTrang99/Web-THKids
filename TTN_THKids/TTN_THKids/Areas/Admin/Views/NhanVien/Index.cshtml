@@ -45,9 +45,13 @@
             @Html.DisplayFor(modelItem => item.NgayVaoLam)
         </td>
         <td>
-            @Html.ActionLink("Chỉnh sửa", "Edit", new { id=item.MaNhanVien }) |
-            @Html.ActionLink("Chi tiết", "Details", new { id=item.MaNhanVien }) |
-            @Html.ActionLink("Xóa", "Delete", new { id=item.MaNhanVien })
+            <a href="~/Admin/NhanVien/Edit/@item.MaNhanVien"> Chỉnh sửa |</a>
+            <a href="~/Admin/NhanVien/Details/@item.MaNhanVien"> Chi tiết |</a>
+            <a href="~/Admin/NhanVien/Delete/@item.MaNhanVien"> Xóa</a>
+
+            @*@Html.ActionLink("Chỉnh sửa", "Edit", new { id=item.MaNhanVien }) |
+        @Html.ActionLink("Chi tiết", "Details", new { id=item.MaNhanVien }) |
+        @Html.ActionLink("Xóa", "Delete", new { id=item.MaNhanVien })*@
         </td>
     </tr>
 }

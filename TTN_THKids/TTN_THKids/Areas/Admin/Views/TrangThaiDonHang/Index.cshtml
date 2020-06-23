@@ -24,9 +24,13 @@
             @Html.DisplayFor(modelItem => item.TenTrangThai)
         </td>
         <td>
-            @Html.ActionLink("Chỉnh sửa", "Edit", new { id=item.MaTrangThai }) |
-            @Html.ActionLink("Chi tiết", "Details", new { id=item.MaTrangThai }) |
-            @Html.ActionLink("Xóa", "Delete", new { id=item.MaTrangThai })
+            <a href="~/Admin/TrangThaiDonHang/Edit/@item.MaTrangThai"> Chỉnh sửa |</a>
+            <a href="~/Admin/TrangThaiDonHang/Details/@item.MaTrangThai"> Chi tiết |</a>
+            <a href="~/Admin/TrangThaiDonHang/Delete/@item.MaTrangThai"> Xóa</a>
+
+            @*@Html.ActionLink("Chỉnh sửa", "Edit", new { id=item.MaTrangThai }) |
+        @Html.ActionLink("Chi tiết", "Details", new { id=item.MaTrangThai }) |
+        @Html.ActionLink("Xóa", "Delete", new { id=item.MaTrangThai })*@
         </td>
     </tr>
 }

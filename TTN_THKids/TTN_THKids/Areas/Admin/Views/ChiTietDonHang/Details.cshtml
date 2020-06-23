@@ -58,6 +58,8 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.SoHieuDonHang }) |
-    @Html.ActionLink("Quay lại", "Index")
+    @*@Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.SoHieuDonHang }) |
+        @Html.ActionLink("Quay lại", "Index")*@
+    <a href="~/Admin/ChiTietDonHang/Edit/@Model.SoHieuDonHang">Chỉnh sửa |</a>
+    <a href="~/Admin/ChiTietDonHang/Index">Quay lại</a>
 </p>

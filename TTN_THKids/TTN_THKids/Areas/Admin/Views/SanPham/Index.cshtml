@@ -108,9 +108,13 @@
             @Html.DisplayFor(modelItem => item.SoLuongMua)
         </td>
         <td>
-            @Html.ActionLink("Sửa", "Edit", new { id=item.MaSanPham }) |
-            @Html.ActionLink("Chi tiết", "Details", new { id=item.MaSanPham }) |
-            @Html.ActionLink("Xóa", "Delete", new { id=item.MaSanPham })
+            <a href="~/Admin/SanPham/Edit/@item.MaSanPham"> Chỉnh sửa |</a>
+            <a href="~/Admin/SanPham/Details/@item.MaSanPham"> Chi tiết |</a>
+            <a href="~/Admin/SanPham/Delete/@item.MaSanPham"> Xóa</a>
+
+            @*@Html.ActionLink("Sửa", "Edit", new { id=item.MaSanPham }) |
+        @Html.ActionLink("Chi tiết", "Details", new { id=item.MaSanPham }) |
+        @Html.ActionLink("Xóa", "Delete", new { id=item.MaSanPham })*@
         </td>
     </tr>
 }

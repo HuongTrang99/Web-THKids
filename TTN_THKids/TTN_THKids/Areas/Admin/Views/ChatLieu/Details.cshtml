@@ -21,6 +21,8 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.MaChatLieu }) |
-    @Html.ActionLink("Back to List", "Index")
+    @*@Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.MaChatLieu }) |
+        @Html.ActionLink("Back to List", "Index")*@
+    <a href="~/Admin/ChatLieu/Edit/@Model.MaChatLieu">Chỉnh sửa |</a>
+    <a href="~/Admin/ChatLieu/Index">Quay lại</a>
 </p>

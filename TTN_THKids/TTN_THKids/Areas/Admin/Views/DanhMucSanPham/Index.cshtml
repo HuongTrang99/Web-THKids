@@ -30,9 +30,13 @@
             @Html.DisplayFor(modelItem => item.TenDMSP)
         </td>
         <td>
-            @Html.ActionLink("Chỉnh sửa", "Edit", new { id=item.MaDMSP }) |
-            @Html.ActionLink("Chi tiết", "Details", new { id=item.MaDMSP }) |
-            @Html.ActionLink("Xóa", "Delete", new { id=item.MaDMSP })
+            <a href="~/Admin/DanhMucSanPham/Edit/@item.MaDMSP"> Chỉnh sửa |</a>
+            <a href="~/Admin/DanhMucSanPham/Details/@item.MaDMSP"> Chi tiết |</a>
+            <a href="~/Admin/DanhMucSanPham/Delete/@item.MaDMSP"> Xóa</a>
+
+            @*@Html.ActionLink("Chỉnh sửa", "Edit", new { id=item.MaDMSP }) |
+        @Html.ActionLink("Chi tiết", "Details", new { id=item.MaDMSP }) |
+        @Html.ActionLink("Xóa", "Delete", new { id=item.MaDMSP })*@
         </td>
     </tr>
 }

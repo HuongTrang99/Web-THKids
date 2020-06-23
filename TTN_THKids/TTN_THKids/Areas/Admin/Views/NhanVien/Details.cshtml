@@ -49,6 +49,10 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.MaNhanVien }) |
-    @Html.ActionLink("Quay lại", "Index")
+    <a href="~/Admin/NhanVien/Edit/@Model.MaNhanVien">Chỉnh sửa |</a>
+    <a href="~/Admin/NhanVien/Index">Quay lại</a>
+
+
+    @*@Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.MaNhanVien }) |
+        @Html.ActionLink("Quay lại", "Index")*@
 </p>

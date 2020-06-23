@@ -23,9 +23,12 @@
             @Html.DisplayFor(modelItem => item.TenChatLieu)
         </td>
         <td>
-            @Html.ActionLink("Chỉnh sửa", "Edit", new { id=item.MaChatLieu }) |
-            @Html.ActionLink("Chi tiết", "Details", new { id=item.MaChatLieu }) |
-            @Html.ActionLink("Xóa", "Delete", new { id=item.MaChatLieu })
+            <a href="~/Admin/ChatLieu/Edit/@item.MaChatLieu"> Chỉnh sửa |</a>
+            <a href="~/Admin/ChatLieu/Details/@item.MaChatLieu"> Chi tiết |</a>
+            <a href="~/Admin/ChatLieu/Delete/@item.MaChatLieu"> Xóa</a>
+            @*@Html.ActionLink("Chỉnh sửa", "Edit", new { id=item.MaChatLieu }) |
+        @Html.ActionLink("Chi tiết", "Details", new { id=item.MaChatLieu }) |
+        @Html.ActionLink("Xóa", "Delete", new { id=item.MaChatLieu })*@
         </td>
     </tr>
 }

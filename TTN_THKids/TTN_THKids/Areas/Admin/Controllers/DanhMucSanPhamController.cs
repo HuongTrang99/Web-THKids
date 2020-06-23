@@ -24,6 +24,7 @@ namespace TTN_THKids.Areas.Admin.Controllers
         // GET: Admin/DanhMucSanPham/Details/5
         public ActionResult Details(string id)
         {
+            id = id.Trim();
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);

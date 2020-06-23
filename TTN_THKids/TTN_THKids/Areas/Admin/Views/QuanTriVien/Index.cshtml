@@ -29,9 +29,10 @@
             @Html.DisplayFor(modelItem => item.pass)
         </td>
         <td>
-            @Html.ActionLink("Chỉnh sửa", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Chi tiết", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Xóa", "Delete", new { id=item.ID })
+            <a href="~/Admin/QuanTriVien/Edit/@item.ID"> Chỉnh sửa |</a>
+            <a href="~/Admin/QuanTriVien/Details/@item.ID"> Chi tiết |</a>
+            <a href="~/Admin/QuanTriVien/Delete/@item.ID"> Xóa</a>
+           
         </td>
     </tr>
 }

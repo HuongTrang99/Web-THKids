@@ -73,9 +73,13 @@
             @Html.DisplayFor(modelItem => item.GhiChu)
         </td>
         <td>
-            @Html.ActionLink("Chỉnh sửa", "Edit", new { id=item.MaDonHang }) |
-            @Html.ActionLink("Chi tiết", "Details", new { id=item.MaDonHang }) |
-            @Html.ActionLink("Xóa", "Delete", new { id=item.MaDonHang })
+            <a href="~/Admin/DonHang/Edit/@item.MaDonHang"> Chỉnh sửa |</a>
+            <a href="~/Admin/DonHang/Details/@item.MaDonHang"> Chi tiết |</a>
+            <a href="~/Admin/DonHang/Delete/@item.MaDonHang"> Xóa</a>
+
+            @*@Html.ActionLink("Chỉnh sửa", "Edit", new { id=item.MaDonHang }) |
+        @Html.ActionLink("Chi tiết", "Details", new { id=item.MaDonHang }) |
+        @Html.ActionLink("Xóa", "Delete", new { id=item.MaDonHang })*@
         </td>
     </tr>
 }

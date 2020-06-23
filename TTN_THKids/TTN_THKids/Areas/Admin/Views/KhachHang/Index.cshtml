@@ -80,9 +80,13 @@
             @Html.DisplayFor(modelItem => item.ThoiGianDangKy)
         </td>
         <td>
-            @Html.ActionLink("Chỉnh sửa", "Edit", new { id=item.MaKhachHang }) |
-            @Html.ActionLink("Chi tiết", "Details", new { id=item.MaKhachHang }) |
-            @Html.ActionLink("Xóa", "Delete", new { id=item.MaKhachHang })
+            <a href="~/Admin/KhachHang/Edit/@item.MaKhachHang"> Chỉnh sửa |</a>
+            <a href="~/Admin/KhachHang/Details/@item.MaKhachHang"> Chi tiết |</a>
+            <a href="~/Admin/KhachHang/Delete/@item.MaKhachHang"> Xóa</a>
+
+            @*@Html.ActionLink("Chỉnh sửa", "Edit", new { id=item.MaKhachHang }) |
+        @Html.ActionLink("Chi tiết", "Details", new { id=item.MaKhachHang }) |
+        @Html.ActionLink("Xóa", "Delete", new { id=item.MaKhachHang })*@
         </td>
     </tr>
 }

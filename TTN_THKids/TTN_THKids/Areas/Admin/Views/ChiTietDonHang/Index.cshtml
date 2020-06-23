@@ -52,9 +52,12 @@
             @Html.DisplayFor(modelItem => item.GhiChu)
         </td>
         <td>
-            @Html.ActionLink("Chỉnh sửa", "Edit", new { id=item.SoHieuDonHang }) |
-            @Html.ActionLink("Chi tiết", "Details", new { id=item.SoHieuDonHang }) |
-            @Html.ActionLink("Xóa", "Delete", new { id=item.SoHieuDonHang })
+            <a href="~/Admin/ChiTietDonHang/Edit/@item.SoHieuDonHang"> Chỉnh sửa |</a>
+            <a href="~/Admin/ChiTietDonHang/Details/@item.SoHieuDonHang"> Chi tiết |</a>
+            <a href="~/Admin/ChiTietDonHang/Delete/@item.SoHieuDonHang"> Xóa</a>
+            @*@Html.ActionLink("Chỉnh sửa", "Edit", new { id=item.SoHieuDonHang }) |
+        @Html.ActionLink("Chi tiết", "Details", new { id=item.SoHieuDonHang }) |
+        @Html.ActionLink("Xóa", "Delete", new { id=item.SoHieuDonHang })*@
         </td>
     </tr>
 }
