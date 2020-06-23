@@ -17,7 +17,7 @@ namespace TTN_THKids.Areas.Admin
             context.MapRoute(
                 "Admin_default",
                 "Admin/{controller}/{action}/{id}",
-                new { action = "Index", id = UrlParameter.Optional },
+                new { controller = "home", action = "Index", id = UrlParameter.Optional },
                 namespaces: new string[] { "TTN_THKids.Areas.Admin.Controllers" }
             );
         }

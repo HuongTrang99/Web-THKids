@@ -20,7 +20,7 @@ go
 USE WebTHKids
 GO
 CREATE TABLE QuanTriVien(
-		ID bigint not null primary key,
+		ID char(15) not null primary key,
 		username nvarchar (50) not null unique,
 		pass nvarchar (30) not null
 		)

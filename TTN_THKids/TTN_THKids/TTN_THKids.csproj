@@ -144,6 +144,7 @@
     <Compile Include="Areas\Admin\Controllers\SanPhamController.cs" />
     <Compile Include="Areas\Admin\Controllers\ThuongHieuController.cs" />
     <Compile Include="Areas\Admin\Controllers\TrangThaiDonHangController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -174,6 +175,19 @@
     <Content Include="Areas\Admin\Content\build\images\loading.gif" />
     <Content Include="Areas\Admin\Content\build\js\custom.js" />
     <Content Include="Areas\Admin\Content\build\js\custom.min.js" />
+    <Content Include="Areas\Admin\Content\images\1ds20s025-pr091-2-thumb.jpg" />
+    <Content Include="Areas\Admin\Content\images\1ks19s012-sa403-120_2.jpg" />
+    <Content Include="Areas\Admin\Content\images\1ks20s006-sb205-110.jpg" />
+    <Content Include="Areas\Admin\Content\images\1ts19s005-fo025-120_2.jpg" />
+    <Content Include="Areas\Admin\Content\images\1ts20s006-sb287-1-thumb.jpg" />
+    <Content Include="Areas\Admin\Content\images\1ts20s027-sg0921-_01.jpg" />
+    <Content Include="Areas\Admin\Content\images\2bj20s001-sj556-120.jpg" />
+    <Content Include="Areas\Admin\Content\images\2bk20s002-se219-2.jpg" />
+    <Content Include="Areas\Admin\Content\images\2ls20s014-sg052-1-thumb.jpg" />
+    <Content Include="Areas\Admin\Content\images\2th20s002-cg068-120.jpg" />
+    <Content Include="Areas\Admin\Content\images\7lb18s003-sb440-69.jpg" />
+    <Content Include="Areas\Admin\Content\images\7lj18a006-pm026-9-12-ghep_final_2.jpg" />
+    <Content Include="Areas\Admin\Content\images\7st18a002-fw103-69-ghep_final.jpg" />
     <Content Include="Areas\Admin\Content\images\american-express.png" />
     <Content Include="Areas\Admin\Content\images\cropper.jpg" />
     <Content Include="Areas\Admin\Content\images\favicon.ico" />
@@ -188,6 +202,7 @@
     <Content Include="Areas\Admin\Content\images\prod-3.jpg" />
     <Content Include="Areas\Admin\Content\images\prod-4.jpg" />
     <Content Include="Areas\Admin\Content\images\prod-5.jpg" />
+    <Content Include="Areas\Admin\Content\images\SP014.jpg" />
     <Content Include="Areas\Admin\Content\images\user.png" />
     <Content Include="Areas\Admin\Content\images\visa.png" />
     <Content Include="Areas\Admin\Content\vendors\animate.css\animate.css" />
@@ -3707,6 +3722,12 @@
     <Content Include="Content\images\18.png" />
     <Content Include="Content\images\19.jpg" />
     <Content Include="Content\images\19.png" />
+    <Content Include="Content\images\1ds20s025-pr091-2-thumb.jpg" />
+    <Content Include="Content\images\1ks19s012-sa403-120_2.jpg" />
+    <Content Include="Content\images\1ks20s006-sb205-110.jpg" />
+    <Content Include="Content\images\1ts19s005-fo025-120_2.jpg" />
+    <Content Include="Content\images\1ts20s006-sb287-1-thumb.jpg" />
+    <Content Include="Content\images\1ts20s027-sg0921-_01.jpg" />
     <Content Include="Content\images\2.jpg" />
     <Content Include="Content\images\2.png" />
     <Content Include="Content\images\20.jpg" />
@@ -3729,6 +3750,10 @@
     <Content Include="Content\images\28.png" />
     <Content Include="Content\images\29.jpg" />
     <Content Include="Content\images\29.png" />
+    <Content Include="Content\images\2bj20s001-sj556-120.jpg" />
+    <Content Include="Content\images\2bk20s002-se219-2.jpg" />
+    <Content Include="Content\images\2ls20s014-sg052-1-thumb.jpg" />
+    <Content Include="Content\images\2th20s002-cg068-120.jpg" />
     <Content Include="Content\images\3.jpg" />
     <Content Include="Content\images\3.png" />
     <Content Include="Content\images\30.jpg" />
@@ -3792,6 +3817,9 @@
     <Content Include="Content\images\74.png" />
     <Content Include="Content\images\75.png" />
     <Content Include="Content\images\76.png" />
+    <Content Include="Content\images\7lb18s003-sb440-69.jpg" />
+    <Content Include="Content\images\7lj18a006-pm026-9-12-ghep_final_2.jpg" />
+    <Content Include="Content\images\7st18a002-fw103-69-ghep_final.jpg" />
     <Content Include="Content\images\8.jpg" />
     <Content Include="Content\images\8.png" />
     <Content Include="Content\images\9.jpg" />
@@ -3803,6 +3831,7 @@
     <Content Include="Content\images\img-sp.png" />
     <Content Include="Content\images\offer.png" />
     <Content Include="Content\images\paypal.png" />
+    <Content Include="Content\images\SP014.jpg" />
     <Content Include="Content\images\star.png" />
     <Content Include="Content\images\star1.png" />
     <Content Include="Content\images\tag.png" />
@@ -4811,11 +4840,13 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Detailes.cshtml" />
+    <Content Include="Views\Home\SanPhamBanChay.cshtml" />
+    <Content Include="Views\Home\SanPhamMoi.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Views\teest\" />
   </ItemGroup>
   <ItemGroup>
