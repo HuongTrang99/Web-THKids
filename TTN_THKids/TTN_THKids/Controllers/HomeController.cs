@@ -50,5 +50,11 @@ namespace TTN_THKids.Controllers
             ViewBag.Message = "Liên hệ Hệ Thống Thời Trang Trẻ em";
             return View();
         }
+
+        public ActionResult Cart()
+        {
+            
+            return View();
+        }
     }
 }

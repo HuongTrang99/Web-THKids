@@ -4843,6 +4843,7 @@
     <Content Include="Views\Home\Detailes.cshtml" />
     <Content Include="Views\Home\SanPhamBanChay.cshtml" />
     <Content Include="Views\Home\SanPhamMoi.cshtml" />
+    <Content Include="Views\Home\Cart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
