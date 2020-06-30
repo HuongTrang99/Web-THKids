@@ -72,7 +72,7 @@ namespace TTN_THKids.Areas.Admin.Controllers
                 return HttpNotFound();
             }
             return View(chatLieu);
-        }
+        }    
 
         // POST: Admin/ChatLieu/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
