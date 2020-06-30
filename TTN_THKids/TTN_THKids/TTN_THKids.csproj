@@ -4837,13 +4837,24 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\SanPhamBeGai.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Detailes.cshtml" />
     <Content Include="Views\Home\SanPhamBanChay.cshtml" />
     <Content Include="Views\Home\SanPhamMoi.cshtml" />
     <Content Include="Views\Home\Cart.cshtml" />
+    <Content Include="Views\Home\SanPhamBeTrai.cshtml" />
+    <Content Include="Views\Home\SanPhamSoSinh.cshtml" />
+    <Content Include="Views\Home\QuanBeGai.cshtml" />
+    <Content Include="Views\Home\AoBeGai.cshtml" />
+    <Content Include="Views\Home\SetBeGai.cshtml" />
+    <Content Include="Views\Home\QuanBeTrai.cshtml" />
+    <Content Include="Views\Home\AoBeTrai.cshtml" />
+    <Content Include="Views\Home\SetBeTrai.cshtml" />
+    <Content Include="Views\Home\QuanSoSinh.cshtml" />
+    <Content Include="Views\Home\AoSoSinh.cshtml" />
+    <Content Include="Views\Home\SetSoSinh.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

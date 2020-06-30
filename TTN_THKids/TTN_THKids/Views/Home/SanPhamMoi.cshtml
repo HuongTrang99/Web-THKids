@@ -19,7 +19,7 @@
                                     <figure>
                                         <div class="snipcart-item block">
                                             <div class="snipcart-thumb">
-                                                <a href="@Url.Action("Detailes", "Home", new{id = item.MaSanPham})"><img title=" " alt=" " src="@item.LinkAnh" class="img-responsive" /></a>
+                                                <a href="@Url.Action("Detailes", "Home", new{id = item.MaSanPham.Trim()})"><img title=" " alt=" " src="@item.LinkAnh" class="img-responsive" /></a>
                                                 <p>@item.TenSanPham</p>
                                                 <h4>@item.GiaSanPham.ToString("#,##0") đ</h4>
                                             </div>
@@ -29,10 +29,10 @@
                                                         <input type="hidden" name="cmd" value="_cart" />
                                                         <input type="hidden" name="add" value="1" />
                                                         <input type="hidden" name="business" value=" " />
-                                                        <input type="hidden" name="item_name" value="Fortune Sunflower Oil" />
-                                                        <input type="hidden" name="amount" value="7.99" />
-                                                        <input type="hidden" name="discount_amount" value="1.00" />
-                                                        <input type="hidden" name="currency_code" value="USD" />
+                                                        <input type="hidden" name="item_name" value="@item.TenSanPham" />
+                                                        <input type="hidden" name="amount" value="@item.GiaSanPham.ToString("#,##0")" />
+                                                        <input type="hidden" name="discount_amount" value=" " />
+                                                        <input type="hidden" name="currency_code" value="đ" />
                                                         <input type="hidden" name="return" value=" " />
                                                         <input type="hidden" name="cancel_return" value=" " />
                                                         <input type="submit" name="submit" value="Add to cart" class="button" />
