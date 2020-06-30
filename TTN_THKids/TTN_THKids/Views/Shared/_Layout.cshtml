@@ -43,8 +43,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <a href="/Home/SanPhamBanChay">Sản Phẩm HOT !</a>
         </div>
         <div class="w3l_search">
-            <form action="#" method="post">
-                <input type="text" name="Product" value="Tìm Kiếm..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
+            <form action="/Home/Search" method="post">
+                <input type="text" name="Tensp" value="Tìm Kiếm..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
                 <input type="submit" value=" ">
             </form>
         </div>
@@ -56,7 +56,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <input type="submit" name="submit" value="Xem Giỏ Hàng" class="button" />
                     </fieldset>
                 </form>*@
-            <a href="/Home/Cart"><input type="submit" name="submit" value="Xem Giỏ Hàng" class="button" /></a>
+            <a href="@Url.Action("Index", "Cart")"><input type="submit" name="submit" value="Xem Giỏ Hàng" class="button" /></a>
         </div>
         <div class="w3l_header_right">
             <ul>
@@ -212,8 +212,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             </section>
             <!-- flexSlider -->
-            <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
-            <script defer src="js/jquery.flexslider.js"></script>
+            <link rel="stylesheet" href="~/Content/css/flexslider.css" type="text/css" media="screen" property="" />
+            <script defer src="~/Content/js/jquery.flexslider.js"></script>
             <script type="text/javascript">
                 $(window).load(function () {
                     $('.flexslider').flexslider({
@@ -258,8 +258,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <ul class="w3_footer_grid_list">
                     <li><a href="/Home/Index">Trang Chủ</a></li>
                     <li><a href="/Home/SanPhamBeGai">Bé Gái</a></li>
-                    <li><a href="/Home/SanPhamBeTrai">Bé Gái</a></li>
-                    <li><a href="/Home/SanPhamSoSinh">Bé Gái</a></li>
+                    <li><a href="/Home/SanPhamBeTrai">Bé Trai</a></li>
+                    <li><a href="/Home/SanPhamSoSinh">Trẻ Sơ Sinh</a></li>
                     <li><a href="/Home/SanPhamBanChay">Sản Phẩm Bán Chạy</a></li>
                     <li><a href="/Home/SanPhamMoi">Sản Phẩm Mới</a></li>
 

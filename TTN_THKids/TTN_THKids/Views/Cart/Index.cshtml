@@ -1,0 +1,97 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+<link href="~/Content/csscart/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/Content/csscart/css/paper-dashboard.css" rel="stylesheet" />
+<link href="~/Content/csscart/css/admin.css" rel="stylesheet" />
+
+@using TTN_THKids.Models;
+<style>
+    body {
+        background-color: rgb(233, 230, 225);
+    }
+</style>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card card-plain">
+            <div class="card-body">
+                <form method="post" action="/Cart/UpdateCart">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead class=" text-primary">
+                            <th>
+                                Hình ảnh
+                            </th>
+                            <th>
+                                Tên Sản Phẩm
+                            </th>
+                            <th>
+                                Số lượng
+                            </th>
+                            <th>
+                                Đơn Giá
+                            </th>
+                            <th>
+                                Thành tiền
+                            </th>
+                            <th>
+                            </th>
+                            </thead>
+                            <tbody>
+                                @{ int i = 0;}
+                                @{ decimal sum = 0;}
+                                @foreach (CartItem item in Model.Lines)
+                                {
+                                    <tr>
+                                        <td>
+                                            <img src="@item.SanPham.LinkAnh" height="100px">
+                                        </td>
+                                        <td>
+                                            <h2>@item.SanPham.TenSanPham</h2>
+                                        </td>
+                                        <td>
+                                            <input type="hidden" name="mamon[@i]" value="@item.SanPham.MaSanPham" />
+                                            <input type="text" name="quantity[@i]" class="quantity" value="@item.Quantity" />
+                                        </td>
+                                        <td>
+                                            <h4>@item.SanPham.GiaSanPham</h4>
+                                        </td>
+                                        <td>
+                                            <h4>@(item.Quantity * item.SanPham.GiaSanPham)</h4>
+                                        </td>
+                                        <td>
+                                            <a href="/Cart/RemoveLine/@item.SanPham.MaSanPham">xoa</a>
+                                        </td>
+                                    </tr>
+                                    sum += item.Quantity * item.SanPham.GiaSanPham;
+                                    i = i + 1;
+                                }
+
+                            </tbody>
+                        </table>
+                        <div>
+                            <h3 style="color: red">Tổng. @sum vnđ</h3>
+                        </div>
+                        <div>
+                            <button style="float: right" class="btn btn-outline-primary sel"><a href="/home/login">ThanhToan</a></button>
+                        </div>
+                        <div>
+                            <button style="float: right" type="submit" class="btn btn-outline-primary sel">Cập Nhật</button>
+                        </div>
+                        <div>
+                            <button style="float: right" class="btn btn-outline-primary sel"><a href="/Home/Index"> CONTINUE SHOPPING</a></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+</style>
+

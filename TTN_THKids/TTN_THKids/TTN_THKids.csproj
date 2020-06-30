@@ -144,10 +144,12 @@
     <Compile Include="Areas\Admin\Controllers\SanPhamController.cs" />
     <Compile Include="Areas\Admin\Controllers\ThuongHieuController.cs" />
     <Compile Include="Areas\Admin\Controllers\TrangThaiDonHangController.cs" />
+    <Compile Include="Controllers\CartController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\ChatLieu.cs" />
     <Compile Include="Models\ChiTietDonHang.cs" />
     <Compile Include="Models\DanhMuc.cs" />
@@ -3693,6 +3695,16 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\csscart\css\admin.css" />
+    <Content Include="Content\csscart\css\bootstrap-grid.css" />
+    <Content Include="Content\csscart\css\bootstrap-grid.min.css" />
+    <Content Include="Content\csscart\css\bootstrap-reboot.css" />
+    <Content Include="Content\csscart\css\bootstrap-reboot.min.css" />
+    <Content Include="Content\csscart\css\bootstrap.css" />
+    <Content Include="Content\csscart\css\bootstrap.min.css" />
+    <Content Include="Content\csscart\css\icomoon.css" />
+    <Content Include="Content\csscart\css\paper-dashboard.css" />
+    <Content Include="Content\csscart\css\style.css" />
     <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\creditly.css" />
     <Content Include="Content\css\easy-responsive-tabs.css" />
@@ -4815,6 +4827,12 @@
     <Content Include="Areas\Admin\Views\QuanTriVien\Details.cshtml" />
     <Content Include="Areas\Admin\Views\QuanTriVien\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\QuanTriVien\Index.cshtml" />
+    <Content Include="Content\csscart\css\bootstrap-grid.css.map" />
+    <Content Include="Content\csscart\css\bootstrap-grid.min.css.map" />
+    <Content Include="Content\csscart\css\bootstrap-reboot.css.map" />
+    <Content Include="Content\csscart\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\csscart\css\bootstrap.css.map" />
+    <Content Include="Content\csscart\css\bootstrap.min.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -4843,7 +4861,6 @@
     <Content Include="Views\Home\Detailes.cshtml" />
     <Content Include="Views\Home\SanPhamBanChay.cshtml" />
     <Content Include="Views\Home\SanPhamMoi.cshtml" />
-    <Content Include="Views\Home\Cart.cshtml" />
     <Content Include="Views\Home\SanPhamBeTrai.cshtml" />
     <Content Include="Views\Home\SanPhamSoSinh.cshtml" />
     <Content Include="Views\Home\QuanBeGai.cshtml" />
@@ -4855,6 +4872,7 @@
     <Content Include="Views\Home\QuanSoSinh.cshtml" />
     <Content Include="Views\Home\AoSoSinh.cshtml" />
     <Content Include="Views\Home\SetSoSinh.cshtml" />
+    <Content Include="Views\Cart\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
