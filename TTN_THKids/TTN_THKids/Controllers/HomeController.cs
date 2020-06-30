@@ -148,7 +148,7 @@ namespace TTN_THKids.Controllers
             {
                 model = db.SanPhams.Where(x => x.TenSanPham != null).ToList();
             }
-            return View("QuanBeTrai", model);
+            return View("TimKiem", model);
         }
 
 

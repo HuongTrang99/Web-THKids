@@ -4873,6 +4873,7 @@
     <Content Include="Views\Home\AoSoSinh.cshtml" />
     <Content Include="Views\Home\SetSoSinh.cshtml" />
     <Content Include="Views\Cart\Index.cshtml" />
+    <Content Include="Views\Home\Search.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

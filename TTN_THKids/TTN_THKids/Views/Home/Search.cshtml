@@ -1,12 +1,12 @@
 ﻿@using TTN_THKids.Models;
 @{
-    ViewBag.Title = "SanPhamSoSinh";
+    ViewBag.Title = "TimKiem";
     //List<SanPham> listTrangSanPhamBeGai = ViewBag.TrangSanPhamBeGai;
 }
 
 <div class="top-brands">
     <div class="container">
-        <h3>Quần Áo Cho Trẻ Sơ Sinh</h3>
+        <h3>Kết Quả Tìm Kiếm</h3>
         <div class="agile_top_brands_grids">
 
             @foreach (var item in Model)
@@ -24,22 +24,21 @@
                                             <h4>@item.GiaSanPham.ToString("#,##0") đ</h4>
                                         </div>
                                         <div class="snipcart-details top_brand_home_details">
-                                            @*<form action="#" method="post">
-                                                <fieldset>*@
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="@item.TenSanPham" />
-                                            <input type="hidden" name="amount" value="@item.GiaSanPham.ToString("#,##0")" />
-                                            <input type="hidden" name="discount_amount" value=" " />
-                                            <input type="hidden" name="currency_code" value="đ" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <button class="btn btn-block"><a href="/Cart/AddItem/@item.MaSanPham.Trim()?returnURL = @Request.RawUrl">Add To Cart</a></button>
-                                            @*<input type="submit" name="submit" value="Add to cart" class="button" />*@
-                                            @*</fieldset>*@
+                                            <form action="checkout.html" method="post">
+                                                <fieldset>
+                                                    <input type="hidden" name="cmd" value="_cart" />
+                                                    <input type="hidden" name="add" value="1" />
+                                                    <input type="hidden" name="business" value=" " />
+                                                    <input type="hidden" name="item_name" value="@item.TenSanPham" />
+                                                    <input type="hidden" name="amount" value="@item.GiaSanPham.ToString("#,##0")" />
+                                                    <input type="hidden" name="discount_amount" value=" " />
+                                                    <input type="hidden" name="currency_code" value="đ" />
+                                                    <input type="hidden" name="return" value=" " />
+                                                    <input type="hidden" name="cancel_return" value=" " />
+                                                    <input type="submit" name="submit" value="Add to cart" class="button" />
+                                                </fieldset>
 
-                                            @*</form>*@
+                                            </form>
 
                                         </div>
                                     </div>
