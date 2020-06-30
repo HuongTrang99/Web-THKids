@@ -40,7 +40,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- header -->
     <div class="agileits_header">
         <div class="w3l_offers">
-            <a href="SanPhamBanChay">Sản Phẩm HOT !</a>
+            <a href="/Home/SanPhamBanChay">Sản Phẩm HOT !</a>
         </div>
         <div class="w3l_search">
             <form action="#" method="post">
@@ -50,12 +50,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <div class="product_list_header">
             @*<form action="#" method="post" class="last">
-                <fieldset>
-                    <input type="hidden" name="cmd" value="_cart" />
-                    <input type="hidden" name="display" value="1" />
-                    <input type="submit" name="submit" value="Xem Giỏ Hàng" class="button" />
-                </fieldset>
-            </form>*@
+                    <fieldset>
+                        <input type="hidden" name="cmd" value="_cart" />
+                        <input type="hidden" name="display" value="1" />
+                        <input type="submit" name="submit" value="Xem Giỏ Hàng" class="button" />
+                    </fieldset>
+                </form>*@
             <a href="/Home/Cart"><input type="submit" name="submit" value="Xem Giỏ Hàng" class="button" /></a>
         </div>
         <div class="w3l_header_right">
@@ -97,14 +97,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="logo_products">
         <div class="container">
             <div class="w3ls_logo_products_left">
-                <h1><a href="index.html"><span>Shop</span> Kids</a></h1>
+                <h1><a href="/Home/index.html"><span>Shop</span> Kids</a></h1>
             </div>
             <div class="w3ls_logo_products_left1">
                 <ul class="special_items">
                     <li><a href="Index">Trang Chủ</a><i>/</i></li>
-                    <li><a href="About">Thông Tin</a><i>/</i></li>
-                    <li><a href="SanPhamBanChay">Sản Phẩm Bán Chạy</a><i>/</i></li>
-                    <li><a href="SanPhamMoi">Sản Phẩm Mới</a></li>
+                    <li><a href="SanPhamBeGai">Quần Áo Bé Gái</a><i>/</i></li>
+                    <li><a href="SanPhamBeTrai">Quần Áo Bé Trai</a><i>/</i></li>
+                    <li><a href="SanPhamSoSinh">Quần Áo Trẻ Sơ Sinh</a></li>
                 </ul>
             </div>
             <div class="w3ls_logo_products_left1">
@@ -118,13 +118,120 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
     <!-- //header -->
     <!-- banner -->
-
+    <div class="banner">
+        <div class="w3l_banner_nav_left">
+            <nav class="navbar nav_bottom">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header nav_2">
+                    <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                    <ul class="nav navbar-nav nav_1">
+                        @*<li><a href="products.html">Branded Foods</a></li>*@
+                        @*<li><a href="household.html">Households</a></li>*@
+                        <li class="dropdown mega-dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bé Gái<span class="caret"></span></a>
+                            <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+                                <div class="w3ls_vegetables">
+                                    <ul>
+                                        <li><a href="/Home/QuanBeGai">Quần cho bé gái</a></li>
+                                        <li><a href="/Home/AoBeGai">Áo cho bé gái</a></li>
+                                        <li><a href="/Home/SetBeGai">Bộ quần áo cho bé gái</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        @*<li><a href="kitchen.html">Kitchen</a></li>
+        <li><a href="short-codes.html">Short Codes</a></li>*@
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bé Trai<span class="caret"></span></a>
+                            <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+                                <div class="w3ls_vegetables">
+                                    <ul>
+                                        <li><a href="/Home/QuanBeTrai">Quần cho bé trai</a></li>
+                                        <li><a href="/Home/AoBeTrai">Áo cho bé trai</a></li>
+                                        <li><a href="/Home/SetBeTrai">Bộ quần áo cho bé trai</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        @*<li><a href="pet.html">Pet Food</a></li>*@
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Trẻ Sơ Sinh<span class="caret"></span></a>
+                            <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+                                <div class="w3ls_vegetables">
+                                    <ul>
+                                        <li><a href="/Home/QuanSoSinh">Quần cho trẻ sơ sinh</a></li>
+                                        <li><a href="/Home/AoSoSinh">Áo cho trẻ sơ sinh</a></li>
+                                        <li><a href="/Home/SetSoSinh">Bộ quần áo cho trẻ sơ sinh</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="/Home/SanPhamBanChay">Sản phẩm bán chạy</a></li>
+                        <li><a href="/Home/SanPhamMoi">Sản phẩm mới</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
+        </div>
+        <div class="w3l_banner_nav_right">
+            <section class="slider">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <div class="w3l_banner_nav_right_banner">
+                                <h3>Make your <span>food</span> with Spicy.</h3>
+                                <div class="more">
+                                    <a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="w3l_banner_nav_right_banner1">
+                                <h3>Make your <span>food</span> with Spicy.</h3>
+                                <div class="more">
+                                    <a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="w3l_banner_nav_right_banner2">
+                                <h3>upto <i>50%</i> off.</h3>
+                                <div class="more">
+                                    <a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- flexSlider -->
+            <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+            <script defer src="js/jquery.flexslider.js"></script>
+            <script type="text/javascript">
+                $(window).load(function () {
+                    $('.flexslider').flexslider({
+                        animation: "slide",
+                        start: function (slider) {
+                            $('body').removeClass('loading');
+                        }
+                    });
+                });
+            </script>
+            <!-- //flexSlider -->
+        </div>
+        <div class="clearfix"></div>
+    </div>
     <!-- banner -->
-   
     <!-- top-brands -->
     <!-- //top-brands -->
     <!-- fresh-vegetables -->
-
     <!-- //fresh-vegetables -->
     @RenderBody();
     <!-- newsletter -->
@@ -149,10 +256,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="col-md-3 w3_footer_grid">
                 <h3>Menu</h3>
                 <ul class="w3_footer_grid_list">
-                    <li><a href="Index">Trang Chủ</a></li>
-                    <li><a href="About">Thông Tin</a></li>
-                    <li><a href="SanPhamBanChay">Sản Phẩm Bán Chạy</a></li>
-                    <li><a href="SanPhamMoi">Sản Phẩm Mới</a></li>
+                    <li><a href="/Home/Index">Trang Chủ</a></li>
+                    <li><a href="/Home/SanPhamBeGai">Bé Gái</a></li>
+                    <li><a href="/Home/SanPhamBeTrai">Bé Gái</a></li>
+                    <li><a href="/Home/SanPhamSoSinh">Bé Gái</a></li>
+                    <li><a href="/Home/SanPhamBanChay">Sản Phẩm Bán Chạy</a></li>
+                    <li><a href="/Home/SanPhamMoi">Sản Phẩm Mới</a></li>
 
                 </ul>
             </div>
@@ -160,7 +269,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <h3>Liên Hệ</h3>
                 <ul class="w3_footer_grid_list">
                     <li><a href="Contact">Liên Hệ</a></li>
-                    
+
                 </ul>
             </div>
             <div class="col-md-3 w3_footer_grid">
@@ -178,7 +287,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <li>
                         <p>Cửa Hàng Thời Trang Trẻ Em</p>
                     </li>
-                    
+
                 </ul>
             </div>
             <div class="clearfix"> </div>
