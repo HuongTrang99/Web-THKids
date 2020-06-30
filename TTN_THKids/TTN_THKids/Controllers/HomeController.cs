@@ -42,28 +42,27 @@ namespace TTN_THKids.Controllers
         }
         public ActionResult SanPhamBeGai()
         {
-            TTN_THKidsDbContext db = new TTN_THKidsDbContext();
+            
             string query = "select * from SanPham where MaDMSP between 4 and 6" ;
             var list = db.SanPhams.SqlQuery(query).ToList();
             return View(list.ToList());
         }
         public ActionResult QuanBeGai()
         {
-            TTN_THKidsDbContext db = new TTN_THKidsDbContext();
+            
             string query = "select * from SanPham where MaDMSP = 4";
             var list = db.SanPhams.SqlQuery(query).ToList();
             return View(list.ToList());
         }
         public ActionResult AoBeGai()
         {
-            TTN_THKidsDbContext db = new TTN_THKidsDbContext();
             string query = "select * from SanPham where MaDMSP = 5";
             var list = db.SanPhams.SqlQuery(query).ToList();
             return View(list.ToList());
         }
         public ActionResult SetBeGai()
         {
-            TTN_THKidsDbContext db = new TTN_THKidsDbContext();
+            
             string query = "select * from SanPham where MaDMSP = 6";
             var list = db.SanPhams.SqlQuery(query).ToList();
             return View(list.ToList());
@@ -82,56 +81,54 @@ namespace TTN_THKids.Controllers
 
         public ActionResult SanPhamBeTrai()
         {
-            TTN_THKidsDbContext db = new TTN_THKidsDbContext();
+            
             string query = "select * from SanPham where MaDMSP between 1 and 3";
             var list = db.SanPhams.SqlQuery(query).ToList();
             return View(list.ToList());
         }
         public ActionResult QuanBeTrai()
         {
-            TTN_THKidsDbContext db = new TTN_THKidsDbContext();
+            
             string query = "select * from SanPham where MaDMSP = 1";
             var list = db.SanPhams.SqlQuery(query).ToList();
             return View(list.ToList());
         }
         public ActionResult AoBeTrai()
         {
-            TTN_THKidsDbContext db = new TTN_THKidsDbContext();
+            
             string query = "select * from SanPham where MaDMSP = 2";
             var list = db.SanPhams.SqlQuery(query).ToList();
             return View(list.ToList());
         }
         public ActionResult SetBeTrai()
         {
-            TTN_THKidsDbContext db = new TTN_THKidsDbContext();
+            
             string query = "select * from SanPham where MaDMSP = 3";
             var list = db.SanPhams.SqlQuery(query).ToList();
             return View(list.ToList());
         }
         public ActionResult SanPhamSoSinh()
         {
-            TTN_THKidsDbContext db = new TTN_THKidsDbContext();
+            
             string query = "select * from SanPham where MaDMSP between 7 and 9";
             var list = db.SanPhams.SqlQuery(query).ToList();
             return View(list.ToList());
         }
         public ActionResult QuanSoSinh()
         {
-            TTN_THKidsDbContext db = new TTN_THKidsDbContext();
+            
             string query = "select * from SanPham where MaDMSP = 7";
             var list = db.SanPhams.SqlQuery(query).ToList();
             return View(list.ToList());
         }
         public ActionResult AoSoSinh()
         {
-            TTN_THKidsDbContext db = new TTN_THKidsDbContext();
             string query = "select * from SanPham where MaDMSP = 8";
             var list = db.SanPhams.SqlQuery(query).ToList();
             return View(list.ToList());
         }
         public ActionResult SetSoSinh()
         {
-            TTN_THKidsDbContext db = new TTN_THKidsDbContext();
             string query = "select * from SanPham where MaDMSP = 9";
             var list = db.SanPhams.SqlQuery(query).ToList();
             return View(list.ToList());
