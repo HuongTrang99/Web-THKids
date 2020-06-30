@@ -133,5 +133,25 @@ namespace TTN_THKids.Controllers
             var list = db.SanPhams.SqlQuery(query).ToList();
             return View(list.ToList());
         }
+
+
+
+        [HttpPost]
+        public ActionResult Search(string Tensp)
+        {
+            List<SanPham> model = new List<SanPham>();
+            if (Tensp != "")
+            {
+                model = db.SanPhams.Where(x => x.TenSanPham == Tensp).ToList();
+            }
+            else
+            {
+                model = db.SanPhams.Where(x => x.TenSanPham != null).ToList();
+            }
+            return View("TimKiem", model);
+        }
+
+
+
     }
 }

@@ -43,13 +43,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <a href="SanPhamBanChay">Sản Phẩm HOT !</a>
         </div>
         <div class="w3l_search">
-            <form action="#" method="post">
-                <input type="text" name="Product" value="Tìm Kiếm..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
+            <form action="/Home/Search" method="post">
+                <input type="text" name="Tensp" value="Tìm Kiếm..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
                 <input type="submit" value=" ">
             </form>
         </div>
         <div class="product_list_header">
             @*<form action="#" method="post" class="last">
+<<<<<<< HEAD
+                    <fieldset>
+                        <input type="hidden" name="cmd" value="_cart" />
+                        <input type="hidden" name="display" value="1" />
+                        <input type="submit" name="submit" value="Xem Giỏ Hàng" class="button" />
+                    </fieldset>
+                </form>*@
+            <a href="@Url.Action("Index", "Cart")"><input type="submit" name="submit" value="Xem Giỏ Hàng" class="button" /></a>
+=======
                 <fieldset>
                     <input type="hidden" name="cmd" value="_cart" />
                     <input type="hidden" name="display" value="1" />
@@ -57,6 +66,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </fieldset>
             </form>*@
             <a href="/Home/Cart"><input type="submit" name="submit" value="Xem Giỏ Hàng" class="button" /></a>
+>>>>>>> bba68c4139a91735be6956a96de2347eaec2488d
         </div>
         <div class="w3l_header_right">
             <ul>
@@ -210,6 +220,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         <a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
                                     </div>
                                 </div>
+<<<<<<< HEAD
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- flexSlider -->
+            <link rel="stylesheet" href="~/Content/css/flexslider.css" type="text/css" media="screen" property="" />
+            <script defer src="~/Content/js/jquery.flexslider.js"></script>
+            <script type="text/javascript">
+                $(window).load(function () {
+                    $('.flexslider').flexslider({
+                        animation: "slide",
+                        start: function (slider) {
+                            $('body').removeClass('loading');
+                        }
+=======
                             </li>
                         </ul>
                     </div>
@@ -225,6 +252,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 $('body').removeClass('loading');
                             }
                         });
+>>>>>>> bba68c4139a91735be6956a96de2347eaec2488d
                     });
                 </script>
                 <!-- //flexSlider -->
@@ -261,10 +289,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="col-md-3 w3_footer_grid">
                 <h3>Menu</h3>
                 <ul class="w3_footer_grid_list">
+<<<<<<< HEAD
+                    <li><a href="/Home/Index">Trang Chủ</a></li>
+                    <li><a href="/Home/SanPhamBeGai">Bé Gái</a></li>
+                    <li><a href="/Home/SanPhamBeTrai">Bé Trai</a></li>
+                    <li><a href="/Home/SanPhamSoSinh">Trẻ Sơ Sinh</a></li>
+                    <li><a href="/Home/SanPhamBanChay">Sản Phẩm Bán Chạy</a></li>
+                    <li><a href="/Home/SanPhamMoi">Sản Phẩm Mới</a></li>
+=======
                     <li><a href="Index">Trang Chủ</a></li>
                     <li><a href="About">Thông Tin</a></li>
                     <li><a href="SanPhamBanChay">Sản Phẩm Bán Chạy</a></li>
                     <li><a href="SanPhamMoi">Sản Phẩm Mới</a></li>
+>>>>>>> bba68c4139a91735be6956a96de2347eaec2488d
 
                 </ul>
             </div>
