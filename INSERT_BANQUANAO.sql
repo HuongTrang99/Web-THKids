@@ -89,7 +89,7 @@ INSERT INTO ChatLieu VALUES (1, 'Coton'),
 INSERT INTO SANPHAM VALUES  ('SP001', 005, 1, 1, 1,  N'ÁO PHÔNG BÉ GÁI HỌA TIẾT', 150000, 150000, 10, N'https://canifa.s3.amazonaws.com/media/catalog/product/1/t/1ts19s005-fo025-120_2.jpg', N'https://canifa.s3.amazonaws.com/media/catalog/product/1/t/1ts19s005-fo025-120_2.jpg',
                             N'Áo phông cotton USA họa tiết.Dáng regular, cổ tròn, ngắn tay.Phù hợp mặc mùa hè, thoải mái, dễ dàng. Kết hợp quần shorts, giày thể thao, sandal.', '01/15/2020', 1),
 							
-                            ('SP002', 005, 1,1,1, N'ÁO PHÔNG BÉ GÁI', 169000, 169000,10, N'https://canifa.s3.amazonaws.com/media/catalog/product/1/t/1ts20s006-sb287-1-thumb.jpg', N'https://canifa.s3.amazonaws.com/media/catalog/product/1/t/1ts20s006-sb287-1-thumb.jpg',
+                          ('SP002', 005, 1,1,1, N'ÁO PHÔNG BÉ GÁI', 169000, 169000,10, N'https://canifa.s3.amazonaws.com/media/catalog/product/1/t/1ts20s006-sb287-1-thumb.jpg', N'https://canifa.s3.amazonaws.com/media/catalog/product/1/t/1ts20s006-sb287-1-thumb.jpg',
                             N'Áo phông in hình chất liệu cottonPhom regular, cổ tròn, tay cộc.', '01/15/2020', 3),
 							('SP003', 005, 1, 1, 1, N'ÁO PHÔNG BÉ GÁI', 169000, 169000,10, N'https://canifa.s3.amazonaws.com/media/catalog/product/1/t/1ts20s027-sg0921-_01.jpg',  N'https://canifa.s3.amazonaws.com/media/catalog/product/1/t/1ts20s027-sg0921-_01.jpg', 
 							N'Áo phông chất liệu cotton in hình thân trước.
