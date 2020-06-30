@@ -144,6 +144,7 @@
     <Compile Include="Areas\Admin\Controllers\SanPhamController.cs" />
     <Compile Include="Areas\Admin\Controllers\ThuongHieuController.cs" />
     <Compile Include="Areas\Admin\Controllers\TrangThaiDonHangController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -4855,6 +4856,7 @@
     <Content Include="Views\Home\QuanSoSinh.cshtml" />
     <Content Include="Views\Home\AoSoSinh.cshtml" />
     <Content Include="Views\Home\SetSoSinh.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

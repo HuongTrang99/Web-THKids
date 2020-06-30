@@ -19,6 +19,13 @@ namespace TTN_THKids
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
                 namespaces: new string[] { "TTN_THKids.Controllers" }
             );
+            routes.MapRoute(
+                name: "Contact",
+                url: "Lien-he",
+                defaults: new { controller = "Contact", action = "Index", id= UrlParameter.Optional},
+                namespaces: new[] { "TTN_THKids.Controllers" }
+                );
         }
+
     }
 }
